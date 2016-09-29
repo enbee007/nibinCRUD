@@ -1,0 +1,25 @@
+<h1>{{title}}</h1>
+<hr>
+<p>{{meta.height}}</p>
+<p>{{meta}}</p>
+<hr>
+<a href="/users/info">click to add a student</a>
+<h1>Find All</h1>
+<a href="/users/find">see all the students</a>
+<h1>Find by name</h1>
+<form method = "post" action = "/users/findName">
+	<input type="text" name="name" placeholder="Enter students name">
+	<button type = "submit">FIND</button>
+</form>
+<h1>update</h1>
+<form method = "post" action = "/users/update">
+	<input type="text" name="name" placeholder="Enter students name to update"><br>
+	<input type="text" name="element" placeholder="enter update element">
+	<input type="text" name="elementDescription" placeholder="update value">
+	<button type = "submit">UPDATE</button>
+</form>
+<h1>Delete Student</h1>
+<form method = "post" action = "/users/delete">
+	<input type="text" name="name" placeholder="Enter students name">
+	<button type = "submit">DELETE</button>
+</form>
